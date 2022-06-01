@@ -1,0 +1,118 @@
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #101010;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  z-index: -1;
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+  text-align: right;
+}
+
+hr {
+  margin-bottom: 2rem;
+}
+p {
+  font-size: 20px;
+  line-height: 2;
+  text-align: justify;
+  margin-left: 5rem;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.control__panel {
+  position: fixed;
+  display: flex;
+  bottom: 0; 
+  left: 0; 
+  width: 100%;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+button {
+  transition: all .3s cubic-bezier(.25,.8,.25,1);
+  background: transparent;
+  border-inline: 1px solid white;
+  padding: 10px 20px;
+  width: 200px;
+  color: white;
+  margin-block: auto;
+  margin-inline: 1rem;
+  cursor: pointer;
+  left: 2rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  border-radius: 15px;
+  width: 160px;
+  color: #38c4c4;
+  border-inline: 1px solid #38c4c4;
+  background: #101010;
+}
+
+button:active {
+  color: cyan;
+  border-inline: 1px solid cyan;
+  background: white;
+}
+
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97vw;
+  padding-top: 25vh;
+}
+
+.object-info {
+  max-width: 50vw;
+  margin-bottom: 150vh;
+  margin-left: auto;
+}
+
+.fadeIn {
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
